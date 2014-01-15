@@ -1,0 +1,420 @@
+{
+   "took":3,
+   "timed_out":false,
+   "_shards":{
+      "total":5,
+      "successful":5,
+      "failed":0
+   },
+   "hits":{
+      "total":1,
+      "max_score":1.8540251,
+      "hits":[
+         {
+            "_index":"movies",
+            "_type":"movie",
+            "_id":"148",
+            "_score":1.8540251,
+            "_source":{
+               "title":[
+                  "World War Z"
+               ],
+               "originaltitle":[
+                  "World War Z"
+               ],
+               "rating":[
+                  "6.800000"
+               ],
+               "epbookmark":[
+                  "0.000000"
+               ],
+               "year":[
+                  "2013"
+               ],
+               "top250":[
+                  "0"
+               ],
+               "votes":[
+                  "1188"
+               ],
+               "outline":[
+                  ""
+               ],
+               "plot":[
+                  "Life for former United Nations investigator Gerry Lane and his family seems content. Suddenly, the world is plagued by a mysterious infection turning whole human populations into rampaging mindless zombies. After barely escaping the chaos, Lane is persuaded to go on a mission to investigate this disease. What follows is a perilous trek around the world where Lane must brave horrific dangers and long odds to find answers before human civilization falls."
+               ],
+               "tagline":[
+                  "Remember Philly!"
+               ],
+               "runtime":[
+                  "123"
+               ],
+               "thumb":[
+                  {
+                     "name":"thumb-1",
+                     "prevThumb":"http://image.tmdb.org/t/p/w500/gAt1PrsrFY1nX6UzebeiHP8njE9.jpg",
+                     "longThumb":"http://image.tmdb.org/t/p/original/gAt1PrsrFY1nX6UzebeiHP8njE9.jpg"
+                  },
+                  {
+                     "name":"thumb-2",
+                     "prevThumb":"http://image.tmdb.org/t/p/w500/z21RcjkySv7kMJmK10rfZQrW7Uq.jpg",
+                     "longThumb":"http://image.tmdb.org/t/p/original/z21RcjkySv7kMJmK10rfZQrW7Uq.jpg"
+                  },
+                  {
+                     "name":"thumb-3",
+                     "prevThumb":"http://image.tmdb.org/t/p/w500/5Cf6rfYNfP9pXnhDGxqEiNax2As.jpg",
+                     "longThumb":"http://image.tmdb.org/t/p/original/5Cf6rfYNfP9pXnhDGxqEiNax2As.jpg"
+                  },
+                  {
+                     "name":"thumb-4",
+                     "prevThumb":"http://image.tmdb.org/t/p/w500/aUFwc338BRhZs1C2cDCrwMzynSk.jpg",
+                     "longThumb":"http://image.tmdb.org/t/p/original/aUFwc338BRhZs1C2cDCrwMzynSk.jpg"
+                  },
+                  {
+                     "name":"thumb-5",
+                     "prevThumb":"http://image.tmdb.org/t/p/w500/uwxx2moEOzwu4meFbWg1LM47rVy.jpg",
+                     "longThumb":"http://image.tmdb.org/t/p/original/uwxx2moEOzwu4meFbWg1LM47rVy.jpg"
+                  },
+                  {
+                     "name":"thumb-6",
+                     "prevThumb":"http://image.tmdb.org/t/p/w500/telgavwYmAEHkqJtzUZGfYmd6fl.jpg",
+                     "longThumb":"http://image.tmdb.org/t/p/original/telgavwYmAEHkqJtzUZGfYmd6fl.jpg"
+                  },
+                  {
+                     "name":"thumb-7",
+                     "prevThumb":"http://image.tmdb.org/t/p/w500/nVfFmQEjf7i0bkxFg3py4bwQmry.jpg",
+                     "longThumb":"http://image.tmdb.org/t/p/original/nVfFmQEjf7i0bkxFg3py4bwQmry.jpg"
+                  },
+                  {
+                     "name":"thumb-8",
+                     "prevThumb":"http://image.tmdb.org/t/p/w500/n3Olvgkqh5Y1beObUHzibSkDGTQ.jpg",
+                     "longThumb":"http://image.tmdb.org/t/p/original/n3Olvgkqh5Y1beObUHzibSkDGTQ.jpg"
+                  },
+                  {
+                     "name":"thumb-9",
+                     "prevThumb":"http://image.tmdb.org/t/p/w500/uZtvRNyd2MAgSgh19meF2pPb1PN.jpg",
+                     "longThumb":"http://image.tmdb.org/t/p/original/uZtvRNyd2MAgSgh19meF2pPb1PN.jpg"
+                  },
+                  {
+                     "name":"thumb-10",
+                     "prevThumb":"http://image.tmdb.org/t/p/w500/p1LmIYiHkLnAQZV3poWOILpwTPq.jpg",
+                     "longThumb":"http://image.tmdb.org/t/p/original/p1LmIYiHkLnAQZV3poWOILpwTPq.jpg"
+                  },
+                  {
+                     "name":"thumb-11",
+                     "prevThumb":"http://image.tmdb.org/t/p/w500/jMGNunovTbFozMTEWtBXvBHgSIG.jpg",
+                     "longThumb":"http://image.tmdb.org/t/p/original/jMGNunovTbFozMTEWtBXvBHgSIG.jpg"
+                  },
+                  {
+                     "name":"thumb-12",
+                     "prevThumb":"http://image.tmdb.org/t/p/w500/eAIgomNK1lUHE2z1n0ayEOmv8Yg.jpg",
+                     "longThumb":"http://image.tmdb.org/t/p/original/eAIgomNK1lUHE2z1n0ayEOmv8Yg.jpg"
+                  },
+                  {
+                     "name":"thumb-13",
+                     "prevThumb":"http://image.tmdb.org/t/p/w500/dll1oC7IzVxYEHpN1RbKnrlGlFo.jpg",
+                     "longThumb":"http://image.tmdb.org/t/p/original/dll1oC7IzVxYEHpN1RbKnrlGlFo.jpg"
+                  }
+               ],
+               "mpaa":[
+                  "Rated PG-13"
+               ],
+               "playcount":[
+                  "0"
+               ],
+               "lastplayed":[
+                  "1601-01-01"
+               ],
+               "file":[
+                  ""
+               ],
+               "path":[
+                  "D:\\!downloads\\complete\\World.War.Z.2013.Unrated.Cut.720p.BluRay.x264.DTS-WiKi [PublicHD]\\"
+               ],
+               "filenameandpath":[
+                  "D:\\!downloads\\complete\\World.War.Z.2013.Unrated.Cut.720p.BluRay.x264.DTS-WiKi [PublicHD]\\World.War.Z.2013.Unrated.Cut.720p.BluRay.x264.DTS-WiKi.mkv"
+               ],
+               "basepath":[
+                  "D:\\!downloads\\complete\\World.War.Z.2013.Unrated.Cut.720p.BluRay.x264.DTS-WiKi [PublicHD]\\World.War.Z.2013.Unrated.Cut.720p.BluRay.x264.DTS-WiKi.mkv"
+               ],
+               "id":[
+                  "tt0816711"
+               ],
+               "genre":[
+                  "Action",
+                  "Drama",
+                  "Horror",
+                  "Science Fiction",
+                  "Thriller"
+               ],
+               "country":[
+                  "United States of America"
+               ],
+               "set":[
+                  ""
+               ],
+               "credits":[
+                  "Matthew Michael Carnahan",
+                  "Drew Goddard",
+                  "Damon Lindelof",
+                  "Max Brooks",
+                  "Matthew Michael Carnahan",
+                  "J. Michael Straczynski"
+               ],
+               "director":[
+                  "Marc Forster"
+               ],
+               "premiered":[
+                  "1601-01-01"
+               ],
+               "status":[
+                  ""
+               ],
+               "code":[
+                  ""
+               ],
+               "aired":[
+                  "1601-01-01"
+               ],
+               "studio":[
+                  "GK Films"
+               ],
+               "trailer":[
+                  "plugin://plugin.video.youtube/?action=play_video&videoid=sGf_WdlHTqs"
+               ],
+               "fileinfo":[
+                  {
+                     "streamdetails":[
+                        {
+                           "video":[
+                              {
+                                 "codec":[
+                                    "h264"
+                                 ],
+                                 "aspect":[
+                                    "2.388060"
+                                 ],
+                                 "width":[
+                                    "1280"
+                                 ],
+                                 "height":[
+                                    "536"
+                                 ],
+                                 "durationinseconds":[
+                                    "7383"
+                                 ]
+                              }
+                           ],
+                           "audio":[
+                              {
+                                 "codec":[
+                                    "dca"
+                                 ],
+                                 "language":[
+                                    "eng"
+                                 ],
+                                 "channels":[
+                                    "6"
+                                 ]
+                              }
+                           ]
+                        }
+                     ]
+                  }
+               ],
+               "actor":[
+                  {
+                     "name":[
+                        "Brad Pitt"
+                     ],
+                     "role":[
+                        "Gerry Lane"
+                     ],
+                     "thumb":[
+                        "http://image.tmdb.org/t/p/original/kc3M04QQAuZ9woUvH3Ju5T7ZqG5.jpg"
+                     ]
+                  },
+                  {
+                     "name":[
+                        "Mireille Enos"
+                     ],
+                     "role":[
+                        "Karen Lane"
+                     ],
+                     "thumb":[
+                        "http://image.tmdb.org/t/p/original/iTj8HzuKXh8G1lwNSdFgT5gsLA5.jpg"
+                     ]
+                  },
+                  {
+                     "name":[
+                        "James Badge Dale"
+                     ],
+                     "role":[
+                        "Captain Speke"
+                     ],
+                     "thumb":[
+                        "http://image.tmdb.org/t/p/original/dtv82z6uNuMkY65KcjD1TsTu4gP.jpg"
+                     ]
+                  },
+                  {
+                     "name":[
+                        "Elyes Gabel"
+                     ],
+                     "role":[
+                        "Andrew Fassbach"
+                     ],
+                     "thumb":[
+                        "http://image.tmdb.org/t/p/original/6quYKpn0M3B0BJU3bm2CaSfvGFB.jpg"
+                     ]
+                  },
+                  {
+                     "name":[
+                        "David Andrews"
+                     ],
+                     "role":[
+                        "Navy Captain Mullenaro"
+                     ],
+                     "thumb":[
+                        "http://image.tmdb.org/t/p/original/pxmxn29UHW9r6uvLrd7bEwLswlQ.jpg"
+                     ]
+                  },
+                  {
+                     "name":[
+                        "Abigail Hargrove"
+                     ],
+                     "role":[
+                        "Rachel Lane"
+                     ],
+                     "thumb":[
+                        "http://image.tmdb.org/t/p/original/tVw4OP6JbhU4PtSfeB6eeEbkJwA.jpg"
+                     ]
+                  },
+                  {
+                     "name":[
+                        "Daniella Kertesz"
+                     ],
+                     "role":[
+                        "Segen"
+                     ],
+                     "thumb":[
+                        "http://image.tmdb.org/t/p/original/1t358QxDsYsnwoWVSZK0UB6srqw.jpg"
+                     ]
+                  },
+                  {
+                     "name":[
+                        "Ludi Boeken"
+                     ],
+                     "role":[
+                        "Jurgen Warmbrunn"
+                     ],
+                     "thumb":[
+                        "http://image.tmdb.org/t/p/original/aexWCA6QUGsGrohQ3tdSCyAz09W.jpg"
+                     ]
+                  },
+                  {
+                     "name":[
+                        "Matthew Fox"
+                     ],
+                     "role":[
+                        "Parajumper"
+                     ],
+                     "thumb":[
+                        "http://image.tmdb.org/t/p/original/rMivo0a26DkJBTizOLV5s5U7Dkc.jpg"
+                     ]
+                  },
+                  {
+                     "name":[
+                        "Fana Mokoena"
+                     ],
+                     "role":[
+                        "Thierry Umutoni"
+                     ],
+                     "thumb":[
+                        "http://image.tmdb.org/t/p/original/skuKjL1Ep1SHrZuNl0lYVfZ9VM0.jpg"
+                     ]
+                  },
+                  {
+                     "name":[
+                        "David Morse"
+                     ],
+                     "role":[
+                        "Ex-CIA Agent"
+                     ],
+                     "thumb":[
+                        "http://image.tmdb.org/t/p/original/mjhlYSKCH4q0MlAiJl8JkAyxhlO.jpg"
+                     ]
+                  },
+                  {
+                     "name":[
+                        "Peter Capaldi"
+                     ],
+                     "role":[
+                        "W.H.O. Doctor"
+                     ],
+                     "thumb":[
+                        "http://image.tmdb.org/t/p/original/qX6z4JChK5PjQoV1FuyBxzphZSZ.jpg"
+                     ]
+                  },
+                  {
+                     "name":[
+                        "Moritz Bleibtreu"
+                     ],
+                     "role":[
+                        "W.H.O. Doctor"
+                     ],
+                     "thumb":[
+                        "http://image.tmdb.org/t/p/original/4VqKQvO5sTrAwxN6aMuHrH3Jbdw.jpg"
+                     ]
+                  },
+                  {
+                     "name":[
+                        "Fabrizio Zacharee Guido"
+                     ],
+                     "role":[
+                        "Tomas"
+                     ],
+                     "thumb":[
+                        "http://image.tmdb.org/t/p/original/kkleqqCoTiDoUuxfGIUylw4SRLb.jpg"
+                     ]
+                  },
+                  {
+                     "name":[
+                        "Ruth Negga"
+                     ],
+                     "role":[
+                        "W.H.O. Doctor"
+                     ],
+                     "thumb":[
+                        "http://image.tmdb.org/t/p/original/hxt1fiswZuLrmDaRygPSHdPqnr3.jpg"
+                     ]
+                  },
+                  {
+                     "name":[
+                        "Pierfrancesco Favino"
+                     ],
+                     "role":[
+                        "WHO Doctor"
+                     ],
+                     "thumb":[
+                        "http://image.tmdb.org/t/p/original/tWeQh7NrlPWMCPSsdxp4HuHATHN.jpg"
+                     ]
+                  }
+               ],
+               "resume":[
+                  {
+                     "position":[
+                        "0.000000"
+                     ],
+                     "total":[
+                        "0.000000"
+                     ]
+                  }
+               ],
+               "dateadded":[
+                  "2013-10-14 05:03:20"
+               ]
+            }
+         }
+      ]
+   }
+}

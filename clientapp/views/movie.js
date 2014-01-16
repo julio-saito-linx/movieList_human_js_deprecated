@@ -1,6 +1,6 @@
+'use strict';
 var HumanView = require('human-view');
 var templates = require('../templates');
-
 
 module.exports = HumanView.extend({
     template: templates.includes.movie,
@@ -9,26 +9,26 @@ module.exports = HumanView.extend({
         ,   title: '.title'
         ,   originaltitle: '.originaltitle'
         ,   tagline: '.tagline'
+        ,   director: '.director'
         ,   basepath: '.basepath'
         ,   country: '.country'
         ,   idImdb: '.hrefImdb'
-
-
-    },
-    srcBindings: {
-        'firstThumb': '.firstThumb'
-    },
-    hrefBindings: {
-        'fullImage': '.fullImage',
-        'hrefImdb': '.hrefImdb'
-    },
-    // events: {
-    //     'click .delete': 'handleRemoveClick'
-    // },
-    render: function () {
-        this.renderAndBind();
-    },
-    handleRemoveClick: function () {
-        this.model.destroy();
+        },
+        srcBindings: {
+            'firstThumb': '.firstThumb'
+        },
+        hrefBindings: {
+            'fullImage': '.fullImage',
+            'hrefImdb': '.hrefImdb'
+        },
+        render: function () {
+            this.renderAndBind();
+        },
+        handleRemoveClick: function () {
+            this.model.destroy();
+        },
+        processKeys: function (event) {
+            console.log(event);
+        }
     }
-});
+);

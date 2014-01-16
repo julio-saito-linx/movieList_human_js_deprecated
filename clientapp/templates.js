@@ -12,7 +12,7 @@ exports["pages"] = {};
 // body.jade compiled template
 exports["body"] = function tmpl_body(locals) {
     var buf = [];
-    buf.push('<body><div class="container"><div class="navbar"><div class="navbar-inner"><a href="#" class="brand">My movie list</a><ul class="nav"><li><a href="/">home</a></li><li><a href="/movies">Movies</a></li><li><a href="/collections">collection demo</a></li><li><a href="/info">more info</a></li></ul></div></div><main id="pages"></main></div></body>');
+    buf.push('<body><div class="container"><div class="navbar"><div class="navbar-inner"><a href="#" class="brand">My movie list</a><ul class="nav"><li><a href="/">home</a></li><li><a href="/movies">Movies</a></li><li><a href="/movies/1">Movie</a></li><li><a href="/collections">collection demo</a></li><li><a href="/info">more info</a></li></ul></div></div><main id="pages"></main></div></body>');
     return buf.join('');
 };
 
@@ -26,7 +26,7 @@ exports["head"] = function tmpl_head(locals) {
 // includes/movie.jade compiled template
 exports["includes"]["movie"] = function tmpl_includes_movie(locals) {
     var buf = [];
-    buf.push('<tr class="movie"><td class="tableImage"><a class="fullImage"><img class="firstThumb"/></a></td><td><table class="table"><tr><td class="title"></td><td class="year"></td><td><a class="hrefImdb"></a></td></tr><tr><td class="originaltitle"></td><td class="country"></td><td class="country"></td></tr><tr><td colspan="3" class="tagline"></td></tr><tr><td colspan="3" class="basepath"></td></tr></table></td></tr>');
+    buf.push('<tr class="movie"><td class="tableImage"><a class="fullImage"><img class="firstThumb"/></a></td><td><table class="table"><tr><td><span class="span1">Title:</span><span class="title span3"></span><span class="span1">Year:</span><span class="year span1"> </span><a class="hrefImdb spanInfo"></a></td></tr><tr><td><span class="span1">Original:</span><span class="originaltitle span3"></span><span class="country span3"></span></td></tr><tr><td><span class="span1">Director:</span><span class="director span8"></span></td><tr></tr><td colspan="3"><span class="tagline span8"></span></td></tr><tr><td colspan="3"><span class="basepath span8"></span></td></tr></table></td></tr>');
     return buf.join('');
 };
 
@@ -58,10 +58,17 @@ exports["pages"]["info"] = function tmpl_pages_info(locals) {
     return buf.join('');
 };
 
+// pages/movie.jade compiled template
+exports["pages"]["movie"] = function tmpl_pages_movie(locals) {
+    var buf = [];
+    buf.push('<section class="page pageOne"><h2>Movie</h2><div class="movieDetail"></div></section>');
+    return buf.join('');
+};
+
 // pages/movies.jade compiled template
 exports["pages"]["movies"] = function tmpl_pages_movies(locals) {
     var buf = [];
-    buf.push('<section class="page pageOne"><h2>Movies</h2><table class="movie table"></table></section>');
+    buf.push('<section class="page pageOne"><h2>Movies</h2><div class="searchDiv"><p>Search: <input class="q"/></p></div><table class="movie table"></table></section>');
     return buf.join('');
 };
 

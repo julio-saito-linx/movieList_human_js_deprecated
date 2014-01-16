@@ -7,10 +7,13 @@ body {
 .tableImage {
   width: 100px;
 }
-td.basepath {
+.basepath {
   font-size: 10px;
 }
 td.tagline {
   font-size: 14px;
   font-style: italic;
+}
+span.title {
+  font-weight: bold;
 }

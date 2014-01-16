@@ -1,3 +1,5 @@
+'use strict';
+
 /*global console*/
 var path = require('path');
 var express = require('express');
@@ -12,7 +14,7 @@ var app = express();
 // a little helper for fixing paths for various enviroments
 var fixPath = function (pathString) {
     return path.resolve(path.normalize(pathString));
-}
+};
 
 
 // -----------------
@@ -86,9 +88,17 @@ app.delete('/api/people/:id', api.delete);
 app.put('/api/people/:id', api.update);
 app.post('/api/people', api.add);
 
+
+
+
 var MovieApi = require('./movieApi');
 var movieApi = new MovieApi();
 app.get('/api/movies', movieApi.getWar);
+//app.get('/api/movies/:id', movieApi.getMovie);
+
+
+
+
 
 // Enable the functional test site in development
 if (config.isDev) {

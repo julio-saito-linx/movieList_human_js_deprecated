@@ -10,6 +10,7 @@ module.exports = Backbone.Router.extend({
     routes: {
         '': 'home',
         'movies': 'movies',
+        'movies/:query': 'movies',
         'collections': 'collectionDemo',
         'info': 'info'
     },
@@ -28,10 +29,11 @@ module.exports = Backbone.Router.extend({
         }));
     },
 
-    movies: function () {
+    movies: function (query) {
         app.renderPage(new Movies({
             model: me,
-            collection: app.movies
+            collection: app.movies,
+            query: query
         }));
     },
 

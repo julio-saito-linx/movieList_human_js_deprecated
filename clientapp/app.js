@@ -10,6 +10,7 @@ var tracking = require('./helpers/metrics');
 var MainView = require('./views/main');
 var Me = require('./models/me');
 var Movies = require('./models/movies');
+var __MELD_LOG = require('./log_libs/meld_log');
 
 
 module.exports = {
@@ -22,11 +23,17 @@ module.exports = {
         var self = window.app = this;
 
         window.me = new Me();
+        __MELD_LOG('Me', window.me, 3);
+
         this.movies = new Movies();
+        __MELD_LOG('Movies', this.movies, 2);
 
         // init our URL handlers and the history tracker
         this.router = new Router();
+        __MELD_LOG('Router', this.router, 1);
+
         this.history = Backbone.history;
+        __MELD_LOG('history', this.history, 1);
 
         // wait for document ready to render our main view
         // this ensures the document has a body, etc.
@@ -36,6 +43,8 @@ module.exports = {
                 model: me,
                 el: document.body
             });
+            __MELD_LOG('MainView', self.view, 4);
+    
             self.view.render();
             // we have what we need, we can now start our router and show the appropriate page
             self.history.start({pushState: true, root: '/'});
@@ -67,6 +76,7 @@ module.exports = {
         }
 
         app.currentPage = view;
+        __MELD_LOG(view.cid, view, 6);
 
         // we call show
         container.append(view.show().el);

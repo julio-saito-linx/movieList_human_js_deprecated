@@ -23,7 +23,8 @@
     "stylizer": "0.3.1",
     "elasticsearch": "~1.0.3",
     "wildemitter": "0.0.5",
-    "q": "~1.0.0"
+    "q": "~1.0.0",
+    "meld": "~1.3.0"
   },
   "devDependencies": {
     "precommit-hook": "0.3.8"
@@ -38,23 +39,18 @@
     "indent": 4,
     "node": true,
     "curly": true,
-
     "eqeqeq": true,
     "immed": true,
     "latedef": true,
     "newcap": true,
     "noarg": true,
     "sub": true,
-    "undef": true,
     "unused": false,
     "boss": true,
     "eqnull": true,
-    "node": true,
     "expr": true,
-
     "validthis": true,
     "laxcomma": true,
-    "browser": true,
     "devel": true,
     "globals": {
       "_": true,

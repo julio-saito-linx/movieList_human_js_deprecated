@@ -22,6 +22,9 @@ module.exports = HumanView.extend({
             'fullImage': '.fullImage',
             'hrefImdb': '.hrefImdb'
         },
+        // inputBindings: {
+        //     'search': '.q'
+        // },
         render: function () {
             this.renderAndBind();
         },

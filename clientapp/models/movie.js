@@ -25,5 +25,8 @@ module.exports = HumanModel.define({
                 }
             }
         }
+    ,   session: {
+            search: ['string', false, 'year:(2013)']
+        }
     }
 );

@@ -15,14 +15,24 @@ module.exports = PageView.extend({
     },
     render: function (myQuery) {
         this.renderAndBind();
+
+        //get .q
+        this.jSearch = this.jSearch || this.$('.q');
+
         this.renderCollection(this.collection, MovieView, this.$('.movie')[0]);
         if (!this.collection.length || myQuery) {
             this.fetchCollection(myQuery);
         }
     },
+    updateSearchField : function (query) {
+        this.jSearch.val(query);
+    },
     fetchCollection: function (myQuery) {
         var querySearch = myQuery || this.options.query;
         this.collection.fetch({ data: $.param({ query: querySearch}) });
+        
+        this.updateSearchField(querySearch);
+        
         return false;
     },
     processKeys : function (e) {

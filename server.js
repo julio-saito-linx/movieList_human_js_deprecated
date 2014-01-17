@@ -80,25 +80,10 @@ var clientApp = new Moonboots({
 });
 
 
-// Set up our little demo API
-var api = require('./fakeApi');
-app.get('/api/people', api.list);
-app.get('/api/people/:id', api.get);
-app.delete('/api/people/:id', api.delete);
-app.put('/api/people/:id', api.update);
-app.post('/api/people', api.add);
-
-
-
-
 var MovieApi = require('./movieApi');
 var movieApi = new MovieApi();
 app.get('/api/movies', movieApi.getWar);
 //app.get('/api/movies/:id', movieApi.getMovie);
-
-
-
-
 
 // Enable the functional test site in development
 if (config.isDev) {

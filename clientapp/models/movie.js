@@ -13,6 +13,7 @@ module.exports = HumanModel.define({
         ,   director: ['string', false, '']
         ,   basepath: ['string', false, '']
         ,   country: ['string', false, '']
+        ,   imdbRating: ['string', false, '']
         ,   idImdb: ['string', false, '']
 
         }

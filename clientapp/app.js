@@ -9,7 +9,6 @@ var Router = require('./router');
 var tracking = require('./helpers/metrics');
 var MainView = require('./views/main');
 var Me = require('./models/me');
-var People = require('./models/people');
 var Movies = require('./models/movies');
 
 
@@ -23,7 +22,6 @@ module.exports = {
         var self = window.app = this;
 
         window.me = new Me();
-        this.people = new People();
         this.movies = new Movies();
 
         // init our URL handlers and the history tracker

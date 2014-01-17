@@ -49,6 +49,8 @@
         client.search({
             index: 'movies',
             type: 'movie',
+            size: 30,
+            sort: "imdbInfo.rating:desc",
             body: {
                 query: {
                     query_string: {
@@ -80,6 +82,7 @@
                 source.director = source.director.join(', ');
                 source.basepath = source.basepath[0];
                 source.country = source.country[0];
+                source.imdbRating = source.imdbInfo.rating;
                 source.idImdb = source.idImdb[0];
 
                 if (source.thumb.length > 0) {

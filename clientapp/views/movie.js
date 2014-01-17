@@ -12,6 +12,7 @@ module.exports = HumanView.extend({
         ,   director: '.director'
         ,   basepath: '.basepath'
         ,   country: '.country'
+        ,   imdbRating: '.imdbRating'
         ,   idImdb: '.hrefImdb'
         },
         srcBindings: {

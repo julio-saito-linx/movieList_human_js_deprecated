@@ -12,7 +12,7 @@ exports["pages"] = {};
 // body.jade compiled template
 exports["body"] = function tmpl_body(locals) {
     var buf = [];
-    buf.push('<body><div class="container"><div class="navbar"><div class="navbar-inner"><a href="#" class="brand">My movie list</a><ul class="nav"><li><a href="/">home</a></li><li><a href="/movies">Movies</a></li><li><a href="/movies/1">Movie</a></li><li><a href="/collections">collection demo</a></li><li><a href="/info">more info</a></li></ul></div></div><main id="pages"></main></div></body>');
+    buf.push('<body><div class="container"><div class="navbar"><div class="navbar-inner"><a href="#" class="brand">My movie list</a><ul class="nav"><li><a href="/movies">Movies</a></li><li><a href="/info">human javascript</a></li></ul></div></div><main id="pages"></main></div></body>');
     return buf.join('');
 };
 
@@ -26,28 +26,7 @@ exports["head"] = function tmpl_head(locals) {
 // includes/movie.jade compiled template
 exports["includes"]["movie"] = function tmpl_includes_movie(locals) {
     var buf = [];
-    buf.push('<tr class="movie"><td class="tableImage"><a class="fullImage"><img class="firstThumb"/></a></td><td><table class="table"><tr><td><span class="span1">Title:</span><span class="title span3"></span><span class="span1">Year:</span><span class="year span1"> </span><a class="hrefImdb spanInfo"></a></td></tr><tr><td><span class="span1">Original:</span><span class="originaltitle span3"></span><span class="country span3"></span></td></tr><tr><td><span class="span1">Director:</span><span class="director span8"></span></td><tr></tr><td colspan="3"><span class="tagline span8"></span></td></tr><tr><td colspan="3"><span class="basepath span8"></span></td></tr></table></td></tr>');
-    return buf.join('');
-};
-
-// includes/person.jade compiled template
-exports["includes"]["person"] = function tmpl_includes_person(locals) {
-    var buf = [];
-    buf.push('<li class="person"><img width="40" height="40" class="avatar"/><span class="name"></span><span> <a href="#" class="delete">delete</a></span></li>');
-    return buf.join('');
-};
-
-// pages/collectionDemo.jade compiled template
-exports["pages"]["collectionDemo"] = function tmpl_pages_collectionDemo(locals) {
-    var buf = [];
-    buf.push('<section class="page pageOne"><h2>Collection demo</h2><p>Intelligently rendering collections can be a bit tricky. </p><p><a href="https://github.com/henrikjoreteg/human-view">HumanView\'s</a> <code>renderCollection()</code> method makes it simple.</p><p>The only code required to manage the collection is:</p><pre><code>this.renderCollection(\n   this.collection, \n   PersonView, \n   this.$(\'.people\')[0]\n);</code></pre><h3>People container:</h3><div class="people"></div><p>Try it by clicking the buttons</p><div class="buttons"><button class="btn reset">.reset()</button><button class="btn fetch">.fetch()</button><button class="btn shuffle">.shuffle()</button><button class="btn add">Generate Random Person</button></div><p>Events are always managed so you don\'t get any leaks.</p></section>');
-    return buf.join('');
-};
-
-// pages/home.jade compiled template
-exports["pages"]["home"] = function tmpl_pages_home(locals) {
-    var buf = [];
-    buf.push('<section class="page home"><h2>Welcome to a skeleton for My movie list</h2><p>If you "view source" you\'ll see it\'s 100% client rendered.</p><p>Click around the site using the nav bar at the top. </p><p>Things to note:<ul><li>The url changes, no requests are made to the server.</li><li>Refreshing the page will always get you back to the same page</li><li>Page changes are nearly instantaneous</li><li>In development mode, you don\'t need to restart the server to see changes, just edit and refresh.</li><li>In production mode, it will serve minfied, uniquely named files with super agressive cache headers. To test:<ul> <li>in dev_config.json set <code>isDev</code> to <code>false</code>.</li><li>restart the server.</li><li>view source and you\'ll see minified css and js files with unique names.</li><li>open the "network" tab in chrome dev tools (or something similar). You\'ll also want to make sure you haven\'t disabled your cache.</li><li>without hitting "refresh" load the app again (selecting current URL in url bar and hitting "enter" works great).</li><li>you should now see that the JS and CSS files were both served from cache without making any request to the server at all.</li></ul></li></ul></p></section>');
+    buf.push('<tr class="movie"><td class="tableImage"><a class="fullImage"><img class="firstThumb"/></a><span class="imdbRating"></span></td><td><table class="table"><tr><td><span class="span1">Title:</span><span class="title span3"></span><span class="span1">Year:</span><span class="year span1"> </span><a class="hrefImdb spanInfo"></a></td></tr><tr><td><span class="span1">Original:</span><span class="originaltitle span3"></span><span class="country span3"></span></td></tr><tr><td><span class="span1">Director:</span><span class="director span8"></span></td><tr></tr><td colspan="3"><span class="tagline span8"></span></td></tr><tr><td colspan="3"><span class="basepath span8"></span></td></tr></table></td></tr>');
     return buf.join('');
 };
 

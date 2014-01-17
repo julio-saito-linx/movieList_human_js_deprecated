@@ -6,6 +6,12 @@ body {
 }
 .tableImage {
   width: 100px;
+  text-align: center !important;
+}
+.imdbRating {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 40px;
 }
 .basepath {
   font-size: 10px;

@@ -4,7 +4,7 @@ var Movie = require('./movie');
 
 module.exports = Backbone.Collection.extend({
     model: Movie,
-    url: '/api/movies'
+    url: '/api/moviesTable'
 
     // , initialize : function(models, options){
     //     this.query = options.query;

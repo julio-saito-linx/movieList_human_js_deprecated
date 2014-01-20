@@ -12,7 +12,7 @@ exports["pages"] = {};
 // body.jade compiled template
 exports["body"] = function tmpl_body(locals) {
     var buf = [];
-    buf.push('<body><div class="container"><div class="navbar"><div class="navbar-inner"><a href="#" class="brand">My movie list</a><ul class="nav"><li><a href="/movies">Movies</a></li><li><a href="/info">human javascript</a></li></ul></div></div><main id="pages"></main></div></body>');
+    buf.push('<body><div class="container"><div class="navbar"><div class="navbar-inner"><a href="#" class="brand">My movie list</a><ul class="nav"><li><a href="/movies">Movies</a></li><li><a href="/moviesTable">Movies Table</a></li><li><a href="/info">human javascript</a></li></ul></div></div><main id="pages"></main></div></body>');
     return buf.join('');
 };
 
@@ -27,6 +27,13 @@ exports["head"] = function tmpl_head(locals) {
 exports["includes"]["movie"] = function tmpl_includes_movie(locals) {
     var buf = [];
     buf.push('<tr class="movie"><td class="tableImage"><a class="fullImage"><img class="firstThumb"/></a><span class="imdbRating"></span></td><td><table class="table"><tr><td><span class="span1">Title:</span><span class="title span3"></span><span class="span1">Year:</span><span class="year span1"> </span><a class="hrefImdb spanInfo"></a></td></tr><tr><td><span class="span1">Original:</span><span class="originaltitle span3"></span><span class="country span3"></span></td></tr><tr><td><span class="span1">Director:</span><span class="director span8"></span></td><tr></tr><td colspan="3"><span class="tagline span8"></span></td></tr><tr><td colspan="3"><span class="basepath span8"></span></td></tr></table></td></tr>');
+    return buf.join('');
+};
+
+// includes/movieTable.jade compiled template
+exports["includes"]["movieTable"] = function tmpl_includes_movieTable(locals) {
+    var buf = [];
+    buf.push('<tr class="movie"><td><span class="title"></span></td><td><span class="imdbRating"></span></td><td><span class="year"> </span></td><td><span class="director"></span></td></tr>');
     return buf.join('');
 };
 

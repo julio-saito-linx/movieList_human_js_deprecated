@@ -82,7 +82,8 @@ var clientApp = new Moonboots({
 
 var MovieApi = require('./movieApi');
 var movieApi = new MovieApi();
-app.get('/api/movies', movieApi.getWar);
+app.get('/api/movies', movieApi.getList);
+app.get('/api/moviesTable', movieApi.getAll);
 //app.get('/api/movies/:id', movieApi.getMovie);
 
 // Enable the functional test site in development

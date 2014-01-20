@@ -43,14 +43,16 @@
     //   };
     // };
 
-    var searchQuery = function (query) {
+    var searchQuery = function (options) {
         var defer = q.defer();
+        var query = options.query;
+        var size = options.size || 30;
 
         client.search({
             index: 'movies',
             type: 'movie',
-            size: 30,
-            sort: "imdbInfo.rating:desc",
+            size: size,
+            sort: 'imdbInfo.rating:desc',
             body: {
                 query: {
                     query_string: {
@@ -99,12 +101,19 @@
     };
 
 
-    MovieApi.prototype.getWar = function (req, res) {
-        if (!req.query.query) {
-            req.query.query = 'Bolt';
-        }
+    MovieApi.prototype.getList = function (req, res) {
+        searchQuery({
+            query: req.query.query
+        }).then(function (results) {
+            res.send(results);
+        });
+    };
 
-        searchQuery(req.query.query).then(function (results) {
+    MovieApi.prototype.getAll = function (req, res) {
+        searchQuery({
+            query: req.query.query,
+            size: 1000
+        }).then(function (results) {
             res.send(results);
         });
     };
